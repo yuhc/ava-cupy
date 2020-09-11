@@ -55,6 +55,19 @@ $ pip install cupy
 The latest version of cuDNN and NCCL libraries are included in binary packages (wheels).
 For the source package, you will need to install cuDNN/NCCL before installing CuPy, if you want to use it.
 
+## Build for AvA
+
+```sh
+python3 setup.py --cupy-no-rpath build
+python3 setup.py --cupy-no-rpath install
+```
+
+Uninstall
+
+```sh
+python3 -m pip uninstall cupy
+```
+
 ## Run with Docker
 
 We provide the official Docker image.
