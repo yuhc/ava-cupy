@@ -60,6 +60,10 @@ For the source package, you will need to install cuDNN/NCCL before installing Cu
 ```sh
 python3 setup.py --cupy-no-rpath build
 python3 setup.py --cupy-no-rpath install
+
+sudo apt install chrpath
+cd /path/to/python/lib64/python3.6/site-packages/cupy/cuda
+chrpath -d runtime.cpython-36m-x86_64-linux-gnu.so
 ```
 
 Uninstall
